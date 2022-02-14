@@ -1,4 +1,5 @@
 using MDDPlatform.Messages.Commands;
+using MDDPlatform.Messages.Dispatchers;
 using MDDPlatform.Messages.Events;
 using MDDPlatform.Messages.Queries;
 using Microsoft.Extensions.DependencyInjection;

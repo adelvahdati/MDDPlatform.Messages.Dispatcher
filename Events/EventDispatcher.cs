@@ -1,6 +1,6 @@
+using MDDPlatform.Messages.Dispatchers;
 using MDDPlatform.Messages.Events;
 using Microsoft.Extensions.DependencyInjection;
-using System.Threading.Tasks;
 
 namespace MDDPlatform.Messages.EventDispatchers
 {

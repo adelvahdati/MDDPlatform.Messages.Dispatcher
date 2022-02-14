@@ -1,7 +1,6 @@
 using MDDPlatform.Messages.Queries;
-using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
-
+using MDDPlatform.Messages.Dispatchers;
 
 namespace MDDPlatform.Messages.QueryDispatchers
 {

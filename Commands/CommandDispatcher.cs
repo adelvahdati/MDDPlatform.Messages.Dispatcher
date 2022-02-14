@@ -1,4 +1,5 @@
 using MDDPlatform.Messages.Commands;
+using MDDPlatform.Messages.Dispatchers;
 using Microsoft.Extensions.DependencyInjection;
 namespace MDDPlatform.Messages.CommandDispatchers
 {
