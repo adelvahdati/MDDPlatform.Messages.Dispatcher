@@ -1,8 +1,7 @@
 using MDDPlatform.Messages.Queries;
 using Microsoft.Extensions.DependencyInjection;
-using MDDPlatform.Messages.Dispatchers;
 
-namespace MDDPlatform.Messages.QueryDispatchers
+namespace MDDPlatform.Messages.Dispatchers
 {
     public class QueryDispatcher : IQueryDispatcher
     {
@@ -13,7 +12,7 @@ namespace MDDPlatform.Messages.QueryDispatchers
             _serviceScopeFactory = serviceScopeFactory;
         }
 
-        public async Task<TResult> HandleAsync<TResult>(IQuery query)
+        public async Task<TResult> HandleAsync<TResult>(IQuery<TResult> query)
         {
             using (var scope = _serviceScopeFactory.CreateScope())
             {

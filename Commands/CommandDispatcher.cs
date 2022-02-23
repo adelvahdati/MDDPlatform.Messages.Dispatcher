@@ -1,7 +1,6 @@
 using MDDPlatform.Messages.Commands;
-using MDDPlatform.Messages.Dispatchers;
 using Microsoft.Extensions.DependencyInjection;
-namespace MDDPlatform.Messages.CommandDispatchers
+namespace MDDPlatform.Messages.Dispatchers
 {
     public class CommandDispatcher : ICommandDispatcher{
         private readonly IServiceScopeFactory _serviceScopeFactory;

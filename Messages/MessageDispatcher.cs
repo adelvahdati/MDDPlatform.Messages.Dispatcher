@@ -1,10 +1,9 @@
 using MDDPlatform.Messages.Commands;
-using MDDPlatform.Messages.Dispatchers;
 using MDDPlatform.Messages.Events;
 using MDDPlatform.Messages.Queries;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MDDPlatform.Messages.MessageDispatcher
+namespace MDDPlatform.Messages.Dispatchers
 {
     public class MessageDispatcher : IMessageDispatcher
     {
@@ -41,7 +40,7 @@ namespace MDDPlatform.Messages.MessageDispatcher
             }
         }
 
-        public async Task<TResult> HandleAsync<TResult>(IQuery query)
+        public async Task<TResult> HandleAsync<TResult>(IQuery<TResult> query)
         {
             using (var scope = _serviceScopeFactory.CreateScope())
             {

@@ -1,8 +1,7 @@
-using MDDPlatform.Messages.Dispatchers;
 using MDDPlatform.Messages.Events;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MDDPlatform.Messages.EventDispatchers
+namespace MDDPlatform.Messages.Dispatchers
 {
     public class EventDispatcher : IEventDispatcher
     {
